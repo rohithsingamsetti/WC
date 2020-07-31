@@ -1,0 +1,14 @@
+<h1>hi there</h1>
+<a href={% url "home" %}>START AGAIN</a>
+<h2>there are total {{ count }}</h2>
+<br>
+<h3>the original text is</h3>:
+<br>
+{{ textname }}
+<h2>word count is: </h2>
+{% for word, counttotal in worddictionary %}
+
+{{word}}-{{counttotal}}
+<br>
+
+{% endfor %}
